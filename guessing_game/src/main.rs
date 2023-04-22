@@ -7,9 +7,8 @@ fn main() {
     println!("The no. {} is what we entered", secret_number);
     //Entering Input here
     println!("Enter a String");
-    let guess=0;
 
-    while !(guess > secret_number) || !(guess < secret_number) {
+    loop {
         let mut guess = String::new();
         //Inputing the data
         io::stdin()
